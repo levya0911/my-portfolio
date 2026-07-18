@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Tiến Phát — Digital Portfolio | Pixel Arcade</title>
+<meta name="description" content="Portfolio cá nhân của Nguyễn Tiến Phát — sinh viên Khoa Ngôn ngữ & Văn hoá Anh, Trường Đại học Ngoại ngữ, ĐHQGHN. Tổng hợp hành trình học phần Công nghệ số và Ứng dụng AI qua 6 bài tập cá nhân, theo phong cách Pixel Arcade.">
+<meta property="og:title" content="Nguyễn Tiến Phát — Digital Portfolio">
+<meta property="og:description" content="Hành trình học Công nghệ số & Ứng dụng AI — kể lại theo phong cách arcade retro.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/logo-truong.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-logo">PIXEL ARCADE PORTFOLIO</div>
+    <div class="boot-sub">CÔNG NGHỆ SỐ &amp; ỨNG DỤNG AI — 20█5/20█6</div>
+    <div class="boot-bar"><span></span></div>
+    <div class="boot-loading">ĐANG NẠP DỮ LIỆU...</div>
+    <div class="press-start" style="display:none;">PRESS START ▶</div>
+  </div>
+
+  <div id="pixel-cursor"></div>
+  <div class="crt-overlay"></div>
+  <div class="crt-vignette"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="wrap">
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="brand-home" aria-label="Trang chủ">⌂</a>
+      <nav class="arcade-nav">
+        <a href="index.html">ABOUT ME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="conclusion.html">CONCLUSION</a>
+      </nav>
+      <div class="school-logo">
+        <img src="assets/img/logo-truong.png" alt="Logo Trường Đại học Ngoại ngữ - ĐHQGHN">
+      </div>
+    </header>
+
+    <!-- HERO / GIỚI THIỆU BẢN THÂN -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal in">
+          <span class="eyebrow">// ABOUT ME</span>
+          <h1>Xin chào, mình là <span class="cursor-slash">/</span> Tiến Phát.</h1>
+          <p>
+            Mình là sinh viên năm nhất ngành Ngôn ngữ &amp; Văn hoá Anh, đang từng bước
+            làm quen với thế giới công nghệ số và trí tuệ nhân tạo thông qua học phần
+            <strong>Công nghệ số và Ứng dụng AI</strong>. Portfolio này là nơi mình lưu lại
+            toàn bộ hành trình đó — từ những thao tác máy tính cơ bản đầu tiên cho đến khi
+            biết dùng AI một cách có trách nhiệm.
+          </p>
+
+          <div class="info-list">
+            <div class="row"><b>HỌ VÀ TÊN</b><span>Nguyễn Tiến Phát</span></div>
+            <div class="row"><b>MSSV</b><span>25040989</span></div>
+            <div class="row"><b>NGÀNH HỌC</b><span>Ngôn ngữ &amp; Văn hoá Anh</span></div>
+            <div class="row"><b>TRƯỜNG</b><span>Trường Đại học Ngoại ngữ — Đại học Quốc gia Hà Nội</span></div>
+          </div>
+
+          <div class="pill-row">
+            <span class="btn" style="pointer-events:none;">LEVEL 01 · FRESHMAN</span>
+          </div>
+
+          <a href="projects.html" class="btn">XEM DỰ ÁN CỦA MÌNH →</a>
+        </div>
+
+        <div class="reveal">
+          <div class="avatar-frame">
+            <img src="assets/img/avatar.svg" alt="Pixel avatar đại diện cho Nguyễn Tiến Phát">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC TIÊU / ĐỊNH HƯỚNG / MỤC ĐÍCH -->
+    <section>
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">// GOALS.CFG</span>
+          <h2 class="section-title">Mục tiêu &amp; <span class="hl">định hướng</span></h2>
+        </div>
+
+        <div class="grid-3 mt-lg">
+          <div class="card reveal">
+            <span class="eyebrow" style="margin-bottom:10px;">MỤC TIÊU HỌC TẬP</span>
+            <p>
+              Nắm vững các kỹ năng số nền tảng — từ quản lý dữ liệu, tra cứu học thuật,
+              đến việc khai thác AI tạo sinh — để phục vụ tốt hơn cho việc học ngôn ngữ,
+              biên - phiên dịch và nghiên cứu trong suốt quá trình đại học.
+            </p>
+          </div>
+          <div class="card reveal">
+            <span class="eyebrow" style="margin-bottom:10px;">ĐỊNH HƯỚNG PHÁT TRIỂN</span>
+            <p>
+              Kết hợp năng lực ngôn ngữ với tư duy công nghệ số, hướng tới trở thành một
+              người trẻ vừa giỏi tiếng Anh, vừa biết ứng dụng AI một cách chủ động,
+              hiệu quả và có trách nhiệm trong công việc tương lai.
+            </p>
+          </div>
+          <div class="card reveal">
+            <span class="eyebrow" style="margin-bottom:10px;">MỤC ĐÍCH PORTFOLIO</span>
+            <p>
+              Hệ thống hoá lại 6 bài tập cá nhân của học phần, thể hiện rõ các kỹ năng số
+              đã học được và lưu trữ sản phẩm một cách gọn gàng, dễ truy cập, dễ chia sẻ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG SỐ -->
+    <section>
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">// SKILL TREE</span>
+          <h2 class="section-title">Kỹ năng số đã <span class="hl">mở khoá</span></h2>
+          <p>Mỗi bài tập trong học phần tương ứng với một kỹ năng số được rèn luyện thêm.</p>
+
+          <div class="mt-lg">
+            <div class="skill-bar">
+              <div class="label"><span>Quản lý tệp &amp; thư mục</span><span>Lv.4</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="label"><span>Tra cứu &amp; đánh giá nguồn học thuật</span><span>Lv.4</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="label"><span>Viết Prompt cho AI</span><span>Lv.5</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="label"><span>Hợp tác nhóm trực tuyến</span><span>Lv.3</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="label"><span>Sáng tạo nội dung với AI tạo sinh</span><span>Lv.4</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="label"><span>Sử dụng AI có đạo đức &amp; trách nhiệm</span><span>Lv.5</span></div>
+              <div class="skill-track">
+                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">// INTERESTS.LOG</span>
+          <h2 class="section-title">Mối quan tâm</h2>
+          <div class="grid-2 mt-lg" style="grid-template-columns:1fr;">
+            <div class="card">
+              <h3 style="font-size:16px;">🌐 Ngôn ngữ &amp; văn hoá Anh - Mỹ</h3>
+              <p style="font-size:14px; margin:0;">Tìm hiểu văn hoá, cách diễn đạt và tư duy ngôn ngữ qua tài liệu, phim ảnh và các nguồn học thuật bằng tiếng Anh.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:16px;">🤖 Ứng dụng AI trong học ngoại ngữ</h3>
+              <p style="font-size:14px; margin:0;">Thử nghiệm các công cụ AI hỗ trợ luyện dịch, luyện viết và tra cứu, đồng thời giữ tư duy phản biện khi sử dụng.</p>
+            </div>
+            <div class="card">
+              <h3 style="font-size:16px;">🕹️ Công nghệ &amp; thiết kế số</h3>
+              <p style="font-size:14px; margin:0;">Quan tâm đến cách trình bày thông tin trực quan, sinh động — như chính portfolio phong cách Pixel Arcade này.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE HÀNH TRÌNH 6 TUẦN -->
+    <section>
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">// SAVE FILE</span>
+          <h2 class="section-title">Hành trình <span class="hl">6 tuần</span> học phần</h2>
+        </div>
+
+        <div class="timeline mt-lg reveal">
+          <div class="t-item">
+            <div class="t-date">TUẦN 01</div>
+            <h3 style="font-size:16px;">Máy tính &amp; các thiết bị ngoại vi</h3>
+            <p style="font-size:14px;">Làm quen thao tác quản lý tệp, thư mục — nền tảng đầu tiên của kỹ năng số.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-date">TUẦN 02</div>
+            <h3 style="font-size:16px;">Khai thác dữ liệu &amp; thông tin</h3>
+            <p style="font-size:14px;">Học cách tìm kiếm, chọn lọc và đánh giá độ tin cậy của nguồn học thuật.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-date">TUẦN 03</div>
+            <h3 style="font-size:16px;">Prompt Engineering</h3>
+            <p style="font-size:14px;">Thử nghiệm và so sánh các cấp độ prompt để giao tiếp hiệu quả với AI.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-date">TUẦN 04</div>
+            <h3 style="font-size:16px;">Hợp tác trong môi trường số</h3>
+            <p style="font-size:14px;">Phối hợp nhóm qua Trello, Google Docs, Drive và Discord.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-date">TUẦN 05</div>
+            <h3 style="font-size:16px;">Sáng tạo nội dung với AI tạo sinh</h3>
+            <p style="font-size:14px;">Kết hợp ChatGPT, DALL·E, Canva AI và Gemini để tạo sản phẩm truyền thông.</p>
+          </div>
+          <div class="t-item">
+            <div class="t-date">TUẦN 06</div>
+            <h3 style="font-size:16px;">AI có trách nhiệm</h3>
+            <p style="font-size:14px;">Xây dựng bộ nguyên tắc cá nhân về đạo đức và liêm chính học thuật khi dùng AI.</p>
+          </div>
+        </div>
+
+        <div class="center mt-lg">
+          <a href="projects.html" class="btn alt">MOVE TO MY PROJECTS →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-title">GAME OVER</div>
+        <div class="footer-sub">THANKS FOR PLAYING</div>
+        <div class="footer-links">
+          <a href="index.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="conclusion.html">Conclusion</a>
+        </div>
+        <div class="footer-copy">© 2026 Nguyễn Tiến Phát · Digital Portfolio · Công nghệ số &amp; Ứng dụng AI</div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="achievement">
+    <div class="a-icon">🏆</div>
+    <div>
+      <div class="a-title">ACHIEVEMENT UNLOCKED</div>
+      <div class="a-sub">—</div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

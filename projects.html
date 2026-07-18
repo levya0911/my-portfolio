@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dự án — Nguyễn Tiến Phát | Digital Portfolio</title>
+<meta name="description" content="6 bài tập cá nhân của học phần Công nghệ số và Ứng dụng AI: quản lý tệp, tra cứu học thuật, prompt engineering, hợp tác nhóm, AI tạo sinh và AI có trách nhiệm.">
+<link rel="icon" href="assets/img/logo-truong.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="boot-screen">
+    <div class="boot-logo">PIXEL ARCADE PORTFOLIO</div>
+    <div class="boot-sub">LOADING PROJECTS...</div>
+    <div class="boot-bar"><span></span></div>
+    <div class="boot-loading">ĐANG NẠP DỮ LIỆU...</div>
+    <div class="press-start" style="display:none;">PRESS START ▶</div>
+  </div>
+
+  <div id="pixel-cursor"></div>
+  <div class="crt-overlay"></div>
+  <div class="crt-vignette"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a href="index.html" class="brand-home" aria-label="Trang chủ">⌂</a>
+      <nav class="arcade-nav">
+        <a href="index.html">ABOUT ME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="conclusion.html">CONCLUSION</a>
+      </nav>
+      <div class="school-logo">
+        <img src="assets/img/logo-truong.png" alt="Logo Trường Đại học Ngoại ngữ - ĐHQGHN">
+      </div>
+    </header>
+
+    <section style="padding-top:64px; padding-bottom:40px;">
+      <div class="container">
+        <div class="reveal in center">
+          <span class="eyebrow">// SELECT YOUR STAGE</span>
+          <h1 class="section-title">Tất cả <span class="hl">Dự án</span></h1>
+          <p style="max-width:640px; margin:14px auto 0;">
+            Tổng hợp đầy đủ 6 bài tập trong học phần, từ kỹ năng số cơ bản đến ứng dụng
+            trí tuệ nhân tạo và an toàn thông tin. Chọn một "màn chơi" để xem chi tiết.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="container">
+        <div class="grid-3">
+
+          <a href="projects/bai-1.html" class="project-card reveal" data-project-id="1">
+            <div class="project-thumb">
+              <span class="tag">BÀI 01</span>
+              <img src="assets/img/project-1.svg" alt="Minh hoạ Bài 1 - Máy tính và các thiết bị ngoại vi">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>Máy tính &amp; các thiết bị ngoại vi</h3>
+              <p>Thực hành thao tác tạo, sao chép, di chuyển và xoá tệp/thư mục trên máy tính cá nhân.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+          <a href="projects/bai-2.html" class="project-card reveal" data-project-id="2">
+            <div class="project-thumb">
+              <span class="tag">BÀI 02</span>
+              <img src="assets/img/project-2.svg" alt="Minh hoạ Bài 2 - Khai thác dữ liệu và thông tin">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>Khai thác dữ liệu &amp; thông tin</h3>
+              <p>Tìm kiếm, chọn lọc và đánh giá độ tin cậy của 10 nguồn học thuật bằng Elicit &amp; Google Scholar.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+          <a href="projects/bai-3.html" class="project-card reveal" data-project-id="3">
+            <div class="project-thumb">
+              <span class="tag">BÀI 03</span>
+              <img src="assets/img/project-3.svg" alt="Minh hoạ Bài 3 - Prompt Engineering">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>Viết Prompt hiệu quả cho AI</h3>
+              <p>So sánh 3 cấp độ prompt — cơ bản, cải tiến, nâng cao — cho các tác vụ học tập khác nhau.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+          <a href="projects/bai-4.html" class="project-card reveal" data-project-id="4">
+            <div class="project-thumb">
+              <span class="tag">BÀI 04</span>
+              <img src="assets/img/project-4.svg" alt="Minh hoạ Bài 4 - Giao tiếp và hợp tác trong môi trường số">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>Hợp tác trong môi trường số</h3>
+              <p>Phối hợp dự án nhóm hiệu quả bằng Trello, Google Docs, Google Drive và Discord.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+          <a href="projects/bai-5.html" class="project-card reveal" data-project-id="5">
+            <div class="project-thumb">
+              <span class="tag">BÀI 05</span>
+              <img src="assets/img/project-5.svg" alt="Minh hoạ Bài 5 - Sáng tạo nội dung số với AI tạo sinh">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>Sáng tạo nội dung với AI tạo sinh</h3>
+              <p>Kết hợp ChatGPT, DALL·E, Canva AI và Gemini để dựng bài thuyết trình và infographic.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+          <a href="projects/bai-6.html" class="project-card reveal" data-project-id="6">
+            <div class="project-thumb">
+              <span class="tag">BÀI 06</span>
+              <img src="assets/img/project-6.svg" alt="Minh hoạ Bài 6 - An toàn và liêm chính học thuật khi dùng AI">
+            </div>
+            <div class="project-body">
+              <span class="project-done-badge">✔ ĐÃ HOÀN THÀNH</span>
+              <h3>AI có trách nhiệm trong học thuật</h3>
+              <p>Tìm hiểu chính sách của trường, phân tích vấn đề đạo đức và xây dựng bộ nguyên tắc cá nhân.</p>
+              <span class="project-more">XEM CHI TIẾT →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-title">GAME OVER</div>
+        <div class="footer-sub">THANKS FOR PLAYING</div>
+        <div class="footer-links">
+          <a href="index.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="conclusion.html">Conclusion</a>
+        </div>
+        <div class="footer-copy">© 2026 Nguyễn Tiến Phát · Digital Portfolio · Công nghệ số &amp; Ứng dụng AI</div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="achievement">
+    <div class="a-icon">🏆</div>
+    <div>
+      <div class="a-title">ACHIEVEMENT UNLOCKED</div>
+      <div class="a-sub">—</div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
