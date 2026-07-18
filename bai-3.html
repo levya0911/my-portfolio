@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BÀI 03 — Viết Prompt hiệu quả cho AI | Nguyễn Tiến Phát</title>
+<meta name="description" content="Thử nghiệm và so sánh ba cấp độ prompt — cơ bản, cải tiến, nâng cao — cho ba tác vụ học tập: tóm tắt tài liệu, giải thích khái niệm và tạo câu hỏi ôn tập.">
+<link rel="icon" href="../assets/img/logo-truong.png" type="image/png">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-project-id="3">
+  <div id="pixel-cursor"></div>
+  <div class="crt-overlay"></div>
+  <div class="crt-vignette"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a href="../index.html" class="brand-home" aria-label="Trang chủ">⌂</a>
+      <nav class="arcade-nav">
+        <a href="../index.html">ABOUT ME</a>
+        <a href="../projects.html" class="active">PROJECTS</a>
+        <a href="../conclusion.html">CONCLUSION</a>
+      </nav>
+      <div class="school-logo">
+        <img src="../assets/img/logo-truong.png" alt="Logo Trường Đại học Ngoại ngữ - ĐHQGHN">
+      </div>
+    </header>
+
+    <section class="project-hero">
+      <div class="container">
+        <div class="breadcrumb reveal in">
+          <a href="../projects.html">Dự án</a> / BÀI 03
+        </div>
+        <span class="eyebrow reveal in">// BÀI 03</span>
+        <h1 class="section-title reveal in">Viết Prompt hiệu quả cho AI</h1>
+        <p class="reveal in" style="max-width:680px;">Thử nghiệm và so sánh ba cấp độ prompt — cơ bản, cải tiến, nâng cao — cho ba tác vụ học tập: tóm tắt tài liệu, giải thích khái niệm và tạo câu hỏi ôn tập.</p>
+
+        <div class="meta-strip reveal in">
+          <span class="pill">Prompt Engineering</span><span class="pill">Role Prompting</span><span class="pill">So sánh kết quả</span>
+        </div>
+
+        <div class="detail-cover reveal in">
+          <img src="../assets/img/project-3.svg" alt="Hình minh hoạ BÀI 03 - Viết Prompt hiệu quả cho AI">
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="container">
+
+        <div class="detail-block reveal">
+          <h2><span class="idx">01</span> Mục tiêu</h2>
+          <ul class="checklist">
+            <li>Hiểu vì sao một prompt có cấu trúc rõ ràng lại tạo ra kết quả tốt hơn một prompt chung chung.</li><li>Thực hành kỹ thuật role prompting — giao vai trò cụ thể cho AI.</li><li>Rút ra được bộ nguyên tắc viết prompt hiệu quả cho riêng bản thân.</li>
+          </ul>
+        </div>
+
+        <div class="detail-block reveal">
+          <h2><span class="idx">02</span> Quá trình thực hiện</h2>
+          <p>Chọn 3 tác vụ học tập tiêu biểu: tóm tắt tài liệu học thuật, giải thích một khái niệm phức tạp và tạo bộ câu hỏi ôn tập, mỗi tác vụ đều xác định rõ mục tiêu và thách thức riêng.</p><p>Với mỗi tác vụ, viết 3 phiên bản prompt: bản cơ bản (yêu cầu ngắn gọn), bản cải tiến (thêm định dạng, số lượng ý), và bản nâng cao (thêm vai trò/role, ngữ cảnh, đối tượng người đọc).</p><p>So sánh chất lượng đầu ra giữa ba phiên bản: prompt cơ bản cho kết quả ngắn và thiếu chi tiết, prompt cải tiến có cấu trúc rõ ràng hơn, còn prompt nâng cao cho kết quả đầy đủ và sát mục tiêu học tập nhất.</p><p>Phân tích lý do prompt nâng cao hiệu quả hơn — nhờ cung cấp bối cảnh, vai trò và yêu cầu định dạng cụ thể — từ đó đúc kết 5 nguyên tắc viết prompt hiệu quả.</p>
+        </div>
+
+        <div class="detail-block reveal">
+          <h2><span class="idx">03</span> Những gì đã học được</h2>
+          <ul class="checklist">
+            <li>Vai trò của role prompting (ví dụ: "Bạn là giảng viên đại học...") trong việc định hướng văn phong và độ sâu câu trả lời.</li><li>Tầm quan trọng của việc yêu cầu rõ định dạng đầu ra (gạch đầu dòng, số ý, độ dài).</li><li>Prompt là một quá trình cần thử nghiệm và điều chỉnh, không phải viết một lần là xong.</li>
+          </ul>
+        </div>
+
+        <div class="detail-block reveal">
+          <h2><span class="idx">04</span> Kết quả đạt được</h2>
+          <ul class="checklist">
+            <li>9 phiên bản prompt (3 tác vụ × 3 cấp độ) cùng kết quả đầu ra minh hoạ để đối chiếu.</li><li>Bảng phân tích hiệu quả giữa các cấp độ prompt.</li><li>Bộ 5 nguyên tắc viết prompt hiệu quả để áp dụng cho các môn học khác.</li>
+          </ul>
+        </div>
+
+        <div class="detail-block reveal">
+          <h2><span class="idx">05</span> Tóm tắt nội dung</h2>
+          <p>Đây là bước ngoặt trong cách giao tiếp với AI — từ chỗ đặt câu hỏi ngẫu hứng, đến việc chủ động thiết kế prompt như một công cụ học tập thực thụ.</p>
+        </div>
+
+        <!-- ================= SẢN PHẨM (PLACEHOLDER — KHÔNG HARDCODE) ================= -->
+        <div class="detail-block reveal">
+          <div class="asset-zone">
+            <div class="zone-title">═══ SẢN PHẨM ═══</div>
+            <div class="asset-grid">
+              <a class="asset-slot" href="../assets/files/Bài tập cá nhân_Tuần 3_Nguyễn Tiến Phát.pdf" target="_blank">
+     <div class="ico">[ PDF ]</div>
+     <div class="lbl">XEM BÁO CÁO PDF</div>
+   </a>
+              <div class="asset-slot">
+                <div class="ico"><img src="../assets/img/bai-3-anh1.jpg" alt="Ảnh minh hoạ bài 3" style="border-radius:8px;"></div>
+                <div class="lbl">HÌNH ẢNH</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-top:60px;">
+          <a href="bai-2.html" class="btn alt">◀ BÀI 02</a>
+          <a href="bai-4.html" class="btn">BÀI 04 ▶</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-title">GAME OVER</div>
+        <div class="footer-sub">THANKS FOR PLAYING</div>
+        <div class="footer-links">
+          <a href="../index.html">About Me</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../conclusion.html">Conclusion</a>
+        </div>
+        <div class="footer-copy">© 2026 Nguyễn Tiến Phát · Digital Portfolio · Công nghệ số &amp; Ứng dụng AI</div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="achievement">
+    <div class="a-icon">🏆</div>
+    <div>
+      <div class="a-title">ACHIEVEMENT UNLOCKED</div>
+      <div class="a-sub">—</div>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
